@@ -1,0 +1,76 @@
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+
+.architects-banner,.banner-content,.banner-image>img{
+    background-color: #ffead3;
+    width: 100%;
+}
+.banner-content>h2{
+    margin-top: 0px;
+}
+.banner-content{
+    padding: 0.5rem;
+}
+
+.nav-text{
+    text-decoration: none;
+    color: #000000c3;
+    
+}
+nav h3{
+    padding: 0.6rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ff8f0e2f;
+    width: 100%;
+}
+nav li{
+    padding: 0.5rem;
+    list-style: none;
+}
+nav ul{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    gap:1rem;
+
+    /* flex-direction: row; */
+}
+
+.explore-btn{
+    background-color: #FF900E;
+    color:#FFFFFF;
+    padding: 0.8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 0;
+
+
+}
+
+
+/* strting of responsive design */
+
+/* for small device  */
+@media screen and (max-width:568px){
+    nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-content{
+        padding: 0;
+    }
+    nav h3{
+        padding:0;
+    }
+}
+
+/* for medium device */
+
