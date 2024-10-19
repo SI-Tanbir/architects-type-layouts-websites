@@ -12,9 +12,11 @@ body{
 .banner-content>h2{
     margin-top: 0px;
 }
-.banner-content{
-    padding: 0.5rem;
-}
+
+.banner-content {
+        padding: 0.5rem;
+        text-align: center;
+    }
 
 .nav-text{
     text-decoration: none;
@@ -56,21 +58,165 @@ nav ul{
 }
 
 
+.feature-section{
+    display: flex;
+    width: 100%;
+}
+.feature-images-1{
+    position:relative;
+}
+.feature-images-3{
+    position: relative;
+    top:-2rem;
+}
+
+.feature-content{
+    text-align: center;
+    align-items: center;
+    position: relative;
+    top:15rem;
+}
+
+.experience-banner{
+    display: flex;
+    margin-top: 2rem;
+}
+
+.experience-content-enjoy{
+    padding: 0.5rem;
+}
+.experience-tabs div{
+    background-color: #dfd7d725;
+    margin: .4rem;
+    padding:0.4rem
+}
+#btn {
+    position: absolute;
+    top: 150rem;
+    left: 31rem;
+}
+
+.some-facts-icons{
+    display: flex;
+    gap:14rem;
+}
+
+.some-facts-icons div{
+    border: 1px solid tomato;
+    padding: 3rem;
+    margin: 2rem;
+    text-align: center;
+
+}
+
+.sponspors-banner{
+    text-align: center;
+    
+}
+.sponspors-icons img{
+    margin-left: 9em;
+    
+}
+footer {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #ff450078;
+    font-weight: 100;
+    padding: 0.1rem;
+    margin-top: 1rem;
+}
+
+
+
+
 /* strting of responsive design */
 
 /* for small device  */
 @media screen and (max-width:568px){
+
+
+    .sponspors-icons{
+        /* display: flex; */
+        flex-direction: column;
+
+
+
+    }
+
+.sponspors-icons img {
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr); */
+}
+
+   .some-facts-icons{
+    flex-direction: column;
+    gap:0rem;
+    /* padding: 0rem; */
+
+
+   }
+    #btn {
+        top: 218rem;
+        right: 0rem;
+    }
+    .experience-banner{
+        flex-direction: column;
+    }
+
+    .experience-image img{
+        width: 100%;
+        
+    }
+
+
+
     nav{
         flex-direction: column;
         text-align: center;
     }
-    .banner-content{
-        padding: 0;
+  
+    .banner-content {
+        padding: 0rem;
+    
+
+
+
     }
     nav h3{
         padding:0;
     }
+.feature-section{
+    flex-direction: column;
+}
+.feature-content {
+    top: 1rem;
+}
+.feature-images img{
+    width: 100%;
+
+}
+#btn{
+    left:10rem;
+    position:absolute;
 }
 
+}
 /* for medium device */
 
+@media screen and (min-width:568px) and (max-width:1284px) {
+    .feature-section{
+        flex-direction: column;
+    }
+    .feature-images{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .feature-content {
+      
+        top: 1rem;
+    }
+
+
+    
+    
+}
