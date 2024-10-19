@@ -1,20 +1,37 @@
 
+.quick-list{
+    color:rgba(14, 15, 15, 0.46)
+}
+.features-span{
+    color:orangered
+}
+
 body{
     margin: 0;
     padding:0;
+    font-family: "Prociono", serif;
 }
 
 
-.architects-banner,.banner-content,.banner-image>img{
+.architects-banner,.banner-content{
     background-color: #ffead3;
     width: 100%;
+}
+.banner-image{
+    background-color: white;
+}
+.banner-image>img{
+
+    margin: 8vh 5vw;
+    width: 90%;
+
 }
 .banner-content>h2{
     margin-top: 0px;
 }
 
 .banner-content {
-        padding: 0.5rem;
+        padding: 0;
         text-align: center;
     }
 
@@ -62,13 +79,16 @@ nav ul{
     display: flex;
     width: 100%;
 }
-.feature-images-1{
+.feature-images{
+    
+}
+/* .feature-images-1{
     position:relative;
 }
 .feature-images-3{
     position: relative;
     top:-2rem;
-}
+} */
 
 .feature-content{
     text-align: center;
@@ -98,7 +118,7 @@ nav ul{
 
 .some-facts-icons{
     display: flex;
-    gap:14rem;
+    gap:5vw
 }
 
 .some-facts-icons div{
@@ -133,7 +153,9 @@ footer {
 
 /* for small device  */
 @media screen and (max-width:568px){
-
+    .sponspors-icons img {
+        margin-left: 6em;
+    }
 
     .sponspors-icons{
         /* display: flex; */
@@ -143,18 +165,19 @@ footer {
 
     }
 
-.sponspors-icons img {
-    /* display: grid;
-    grid-template-columns: repeat(2,1fr); */
-}
 
-   .some-facts-icons{
-    flex-direction: column;
-    gap:0rem;
-    /* padding: 0rem; */
+    .some-facts-icons {
+     
+        gap: 0rem;
 
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .some-facts-icons div {
 
-   }
+        padding: 1rem;
+    }
+
     #btn {
         top: 218rem;
         right: 0rem;
@@ -164,7 +187,7 @@ footer {
     }
 
     .experience-image img{
-        width: 100%;
+        width: 99%;
         
     }
 
@@ -175,13 +198,11 @@ footer {
         text-align: center;
     }
   
-    .banner-content {
-        padding: 0rem;
+  
+
+
+
     
-
-
-
-    }
     nav h3{
         padding:0;
     }
@@ -217,6 +238,6 @@ footer {
     }
 
 
-    
+
     
 }
